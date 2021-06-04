@@ -1,3 +1,74 @@
+html,
+body {
+    font-family: "Roboto";
+    height: 100%;
+    margin: 0;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #393e46;
+    color: white;
+}
+
 ul#menu li {
     display: inline;
+    padding: 10px 15px 10px 15px;
+    background-color: #393e46;
+    margin-left: 5px;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+ul#menu li:hover {
+    display: inline;
+    background-color: #00adb5;
+}
+
+ul#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+footer ul li {
+    display: block;
+}
+
+footer ul li a {
+    font-size: 12px;
+    display: block;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
 }
