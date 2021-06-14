@@ -1,74 +1,185 @@
-html,
-body {
-    font-family: "Roboto";
-    height: 100%;
-    margin: 0;
+:root {
+    --c-bg: hsl(0, 0%, 100%);
+    --c-text: hsl(0, 0%, 10%);
+    --c-text-alt: hsl(0, 0%, 10%);
+    --c-detail: hsl(0, 0%, 90%);
+    --f-family: 'Inter', sans-serif;
+    --f-size: 15px;
+    --f-height: 24px;
+    --f-weight: 400;
+    --f-scale-s: 0.87;
+    --f-scale-m: 1.20;
+    --f-scale-l: 1.75;
+    --l-wide: 39rem;
+    --l-text: 25rem;
+    --a-speed: 250ms;
+    --a-ease: ease-out;
+    font-size: var(--f-height);
+    font-family: var(--f-family);
+    font-weight: var(--f-weight);
+    background: var(--c-bg);
+    color: var(--c-text);
 }
 
-.table {
-    border-collapse: collapse;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.table td,
-.table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.table tr:hover {
-    background-color: #ddd;
-}
-
-.table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #393e46;
-    color: white;
-}
-
-ul#menu li {
-    display: inline;
-    padding: 10px 15px 10px 15px;
-    background-color: #393e46;
-    margin-left: 5px;
-    border-radius: 1px;
-    transition: all 0.5s ease-in-out;
-}
-
-ul#menu li:hover {
-    display: inline;
-    background-color: #00adb5;
-}
-
-ul#menu a {
+a {
+    font-size: var(--f-size);
+    color: var(--c-text);
     text-decoration: none;
-    color: white;
+}
+
+.navbarInner {
+    height: 40px;
+}
+
+.navbarInner a {
+    font-size: 0.75rem;
+}
+
+.header,
+.menu,
+.navbar,
+.slider {
+    padding: 0 1rem;
+}
+
+.sliderInner {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.headerInner {
+    height: 150px;
+}
+
+.intro {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header img {
+    transition-duration: 500ms;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.menuInner {
+    padding: 0.5rem 0 0.7rem 0
+}
+
+.menuItem {
+    padding: .5rem 1rem;
+    box-shadow: inset 0px 0px 0px 1px var(--c-bg);
+    border-radius: 9999px;
+    transition-duration: var(--a-speed);
+    transition-timing-function: var(--a-ease);
+    transition-property: box-shadow;
+}
+
+.menuItem:hover {
+    box-shadow: inset 0px 0px 0px 1px var(--c-detail);
+}
+
+.menuItemActive {
+    box-shadow: inset 0px 0px 0px 1px var(--c-detail);
+}
+
+.inputContainer {
+    width: 100%;
+}
+
+.inputContainer input {
+    height: 100%;
+}
+
+.inputContainer label {
+    padding-bottom: 0.2rem;
+    display: block;
+}
+
+.button {
+    color: var(--c-text);
+    text-align: center;
+    cursor: pointer;
+}
+
+.borderTop {
+    border-top: 1px solid var(--c-detail);
+}
+
+.borderBottom {
+    border-bottom: 1px solid var(--c-detail);
 }
 
 footer {
-    padding: 20px;
-    background-color: whitesmoke;
+    background-color: var(--c-detail);
+    font-size: var(--f-size);
 }
 
-footer ul li {
+.footerInner {
+    padding: 1.25rem 3rem;
+}
+
+footer a {
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.footerNetworks {
     display: block;
 }
 
-footer ul li a {
-    font-size: 12px;
-    display: block;
-    padding: 4px 0px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
+section .title {
+    font-size: calc(var(--f-size) * var(--f-scale-l));
+    line-height: 1.3rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    letter-spacing: -0.01em;
+    text-align: center;
 }
 
-footer ul li a:hover {
-    text-decoration: underline;
-    transition: all 0.5s ease-in-out;
+main {
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+article img {
+    border-radius: 10px;
+    transition-duration: var(--a-speed);
+}
+
+article img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main h2 {
+    font-size: calc(var(--f-size) * var(--f-scale-m));
+    text-align: center;
+}
+
+main p {
+    font-size: calc(var(--f-size) * var(--f-scale-s));
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.harmonyLogo {
+    background: no-repeat left/75% url('../images/harmony.png');
+    padding: 1rem 0 0 0;
+    -webkit-filter: contrast(2);
+    filter: contrast(2);
 }
