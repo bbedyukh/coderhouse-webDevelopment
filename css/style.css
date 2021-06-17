@@ -31,14 +31,11 @@ a {
     font-size: var(--f-size);
     color: var(--c-text);
     text-decoration: none;
+    transition-duration: var(--a-speed);
 }
 
-.navbarInner {
-    height: 40px;
-}
-
-.navbarInner a {
-    font-size: 0.75rem;
+a:hover {
+    transform: scale(1.1);
 }
 
 .header,
@@ -46,6 +43,26 @@ a {
 .navbar,
 .slider {
     padding: 0 1rem;
+}
+
+.navbarInner {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+
+.floatLeft {
+    float: left;
+    padding: 0 0 0 0.5rem;
+}
+
+.floatRight {
+    float: right;
+    padding: 0 0.5rem 0 0;
+}
+
+.navbar .navbarInner a {
+    font-size: 0.75rem;
 }
 
 .sliderInner {
@@ -71,8 +88,38 @@ header img:hover {
     cursor: pointer;
 }
 
-.menuInner {
-    padding: 0.5rem 0 0.7rem 0
+.menu {
+    top: 0;
+    background: var(--c-bg);
+    position: sticky;
+}
+
+.menuInner ul {
+    list-style: none;
+}
+
+.menuInner ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menuInner ul ul {
+    position: absolute;
+    display: none;
+    padding: 0.5rem 0.3rem;
+    margin: 0.6rem -0.5rem 0;
+    background: var(--c-bg);
+    border: 1px solid var(--c-detail);
+    border-radius: 10px;
+}
+
+.menuInner ul ul li {
+    padding: 10px 0;
+    display: block;
+}
+
+.menuInner ul li:hover ul {
+    display: block;
 }
 
 .menuItem {
@@ -92,19 +139,6 @@ header img:hover {
     box-shadow: inset 0px 0px 0px 1px var(--c-detail);
 }
 
-.inputContainer {
-    width: 100%;
-}
-
-.inputContainer input {
-    height: 100%;
-}
-
-.inputContainer label {
-    padding-bottom: 0.2rem;
-    display: block;
-}
-
 .button {
     color: var(--c-text);
     text-align: center;
@@ -117,24 +151,6 @@ header img:hover {
 
 .borderBottom {
     border-bottom: 1px solid var(--c-detail);
-}
-
-footer {
-    background-color: var(--c-detail);
-    font-size: var(--f-size);
-}
-
-.footerInner {
-    padding: 1.25rem 3rem;
-}
-
-footer a {
-    display: block;
-    padding: 0.25rem 0;
-}
-
-.footerNetworks {
-    display: block;
 }
 
 section .title {
@@ -177,9 +193,116 @@ main p {
     text-align: center;
 }
 
+footer {
+    background-color: var(--c-detail);
+    font-size: var(--f-size);
+}
+
+.footerInner {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 3rem 1.25rem 3rem;
+}
+
+.footerLinks {
+    width: 90%;
+}
+
+.footerLinks ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.footerLinks ul li {
+    padding: 0 0 0.5rem 0;
+}
+
 .harmonyLogo {
     background: no-repeat left/75% url('../images/harmony.png');
     padding: 1rem 0 0 0;
     -webkit-filter: contrast(2);
     filter: contrast(2);
+}
+
+.inputContainer {
+    width: 100%;
+}
+
+.inputContainer input {
+    height: 100%;
+}
+
+.inputContainer label {
+    padding-bottom: 0.2rem;
+    display: block;
+}
+
+.leftContainer {
+    width: 40%;
+    display: inline-block;
+}
+
+.rightContainer {
+    width: 30%;
+    display: inline-block;
+}
+
+.subscriptionContainer label {
+    padding-bottom: 0.2rem;
+    display: block;
+}
+
+.paymentMethods {
+    padding: 1rem 0 0 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.amexCard {
+    background: no-repeat url('../images/amex.svg');
+    width: 40px;
+    height: 40px;
+}
+
+.masterCard {
+    background: no-repeat url('../images/mcard.svg');
+    height: 40px;
+    width: 40px;
+}
+
+.visaCard {
+    background: no-repeat url('../images/visa.svg');
+    height: 40px;
+    width: 40px;
+}
+
+.paypalCard {
+    background: no-repeat url('../images/paypal.svg');
+    height: 40px;
+    width: 40px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.pt-5 {
+    padding-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.verticallyCenter {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.logoSize {
+    width: 250px;
+    height: auto;
 }
