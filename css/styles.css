@@ -1,0 +1,293 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+  background: linear-gradient(to right, grey 33.33333%, white 66.66666%);
+  background-size: 300% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  transition: background-position 400ms 150ms;
+}
+
+.footer a:hover {
+  background-position: bottom left;
+}
+
+/**********************************************/
+/* (TEMPORAL) SOLO PARA LA CLASE DE SASS/BEM */
+/*********************************************/
+.twitter--color {
+  color: #55acee !important;
+  font-weight: 600;
+}
+
+.facebook--color {
+  color: #3a5795 !important;
+  font-weight: 600;
+}
+
+.instagram--color {
+  color: #8a3ab9 !important;
+  font-weight: 600;
+}
+
+.gallery article figure .img1 {
+  background-image: url("../../images/necklaces/1.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img2 {
+  background-image: url("../../images/necklaces/2.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img3 {
+  background-image: url("../../images/necklaces/3.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img4 {
+  background-image: url("../../images/necklaces/4.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img5 {
+  background-image: url("../../images/necklaces/5.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img6 {
+  background-image: url("../../images/necklaces/6.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img7 {
+  background-image: url("../../images/necklaces/7.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img8 {
+  background-image: url("../../images/necklaces/8.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img9 {
+  background-image: url("../../images/necklaces/9.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img10 {
+  background-image: url("../../images/necklaces/10.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.gallery article figure .img11 {
+  background-image: url("../../images/necklaces/11.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "image description" "image details" "image price";
+  margin: 2rem 0;
+}
+
+.product__image {
+  grid-area: image;
+}
+
+.product__description {
+  align-self: center;
+  grid-area: description;
+}
+
+.product__details {
+  align-self: center;
+  grid-area: details;
+}
+
+.product__price {
+  align-self: center;
+  grid-area: price;
+}
+
+.price_link {
+  background-color: #0d6efd;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.price_link:hover {
+  background-color: #0d6b8f;
+  color: white;
+  opacity: 0.9;
+}
+
+.price_link--rounded {
+  border-radius: 0.5rem;
+}
+
+.price_link--none-underline {
+  text-decoration: none;
+}
+
+.articleArrivals {
+  padding: 0 3rem;
+}
+
+.figure__link--crosshair {
+  cursor: crosshair !important;
+}
+
+.figure__caption {
+  font-size: 10px;
+}
+
+.figure__caption--pl-1 {
+  padding-left: 1rem;
+}
+
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.login__group {
+  flex: 100%;
+  padding: 2rem;
+}
+
+.group__button {
+  border: none !important;
+  background-color: darkcyan;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.group__button--bold {
+  font-weight: 700;
+}
+
+.group__button--rounded {
+  border-radius: 0.3rem;
+}
+
+.grid img {
+  max-height: 250;
+}
+
+/*********************************************/
+img {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+main a:hover {
+  background: linear-gradient(to right, var(--c-text) 33.33333%, white 66.66666%);
+  background-size: 300% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  transition: background-position 400ms var(--a-speed);
+}
+
+figcaption {
+  font-size: calc(var(--f-size) * var(--f-scale-s));
+  line-height: 1rem;
+  letter-spacing: -0.00315856em;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid {
+  padding: 0 1rem 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.grid article {
+  padding: 1rem;
+}
+
+/* .grid img {
+    max-height: 250px;
+} */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gallery article {
+  flex: 25%;
+  padding: 3rem;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .gallery article {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery article {
+    flex: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -5,231 +5,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Gran variedad y al mejor precio en acero blanco, dorado, quirúrgico y plata 925.">
+    <meta name="keywords" content="harmony, accessories, home, pendants, earrings, necklaces, bracelets">
+    <title>Harmony - Home</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 </head>
 
 <body>
 
-    <div class="navbar">
-        <div class="navbarInner borderBottom">
-            <div class="floatLeft">
-                <a href="#">
-                    <span class="mdi mdi-instagram"></span>
-                </a>
-                <a href="#">
-                    <span class="mdi mdi-facebook"></span>
-                </a>
-                <a href="#">
-                    <span class="mdi mdi-twitter"></span>
-                </a>
-            </div>
+    <!-- Header -->
 
-            <div class="floatRight">
-                <a href="#">
-                    <span class="mdi mdi-account"></span>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center px-5" href="index.html">
+                    <img src="images/harmony.png" alt="Harmony Logo" width="100" />
                 </a>
-                <a href="#">
-                    <span class="mdi mdi-cart"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <header class="header">
-        <div class="headerInner ">
-            <div class="floatLeft">
-                <span class="mdi mdi-circle-outline button"></span>
-            </div>
-            <div class="verticallyCenter">
-                <img class="logoSize" src="images/harmony.png" alt="Harmony Logo" />
-            </div>
-            <div class="floatRight">
-                <div class="inputContainer">
-                    <input type="text">
-                    <span class="mdi mdi-magnify button"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/newArrivals.html"><span class="badge bg-info">NEW</span> New Arrivals</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="pages/necklaces.html">Necklaces</a></li>
+                                <li><a class="dropdown-item" href="pages/earrings.html">Earrings</a></li>
+                                <li><a class="dropdown-item" href="pages/bracelets.html">Bracelets</a></li>
+                                <li><a class="dropdown-item" href="pages/pendants.html">Pendants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary" href="pages/login.html" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5
+                    0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                      </svg>
+                    </a>
+                    <a class="btn btn-outline-primary ms-3" href="#" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1
+                    0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <div class="menu">
-        <nav class="menuInner borderBottom borderTop textCenter">
-            <ul>
-                <li>
-                    <a class="menuItem menuItemActive" href="/">Home</a>
-                </li>
-                <li>
-                    <a class="menuItem" href="#allProducts">Products</a>
-                    <ul>
-                        <li>
-                            <a class="menuItem" href="#">Necklaces</a>
-                        </li>
-                        <li>
-                            <a class="menuItem" href="#">Hoops</a>
-                        </li>
-                        <li>
-                            <a class="menuItem" href="#">Bracelets</a>
-                        </li>
-                        <li>
-                            <a class="menuItem" href="#">Trinkets</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="menuItem" href="pages/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="slider">
-        <div class="sliderInner borderBottom">
-            <img src="http://formoid.com/articles/data/upload/2017/03/1indicators.jpg " width="600 " height="300 " alt="slider " />
-        </div>
-    </div>
+    <!-- Main -->
 
     <main>
-        <section>
-            <h1 class="title ">Best Sellers</h1>
-            <div>
-                <article>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_938597-MLA40595626227_012020-F.jpg " width="250 " height="250 " alt="article " />
-                    <h2>Article Name</h2>
-                    <p>$1234</p>
-                </article>
-
-                <article>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_770465-MLA44883701903_022021-O.jpg " width="250 " height="250 " alt="article " />
-                    <h2>Article Name</h2>
-                    <p>$1234</p>
-                </article>
-                <article>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_765274-MLA44946498749_022021-O.jpg " width="250 " height="250 " alt="article " />
-                    <h2>Article Name</h2>
-                    <p>$1234</p>
-                </article>
-                <article>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_667053-MLA42703517194_072020-O.jpg " width="250 " height="250 " alt="article " />
-                    <h2>Article Name</h2>
-                    <p>$1234</p>
-                </article>
-            </div>
-            </table>
-
-            <h1 id="allProducts " class="title ">All Products</h1>
-
-            <table>
-                <tr>
-                    <td>
-                        <article>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_946470-MLA42336035958_062020-F.jpg " width="150 " height="150 " alt="article " />
-                            <h2>Article Name</h2>
-                            <p>$1234</p>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_942807-MLA43251005715_082020-F.jpg " width="150 " height="150 " alt="article " />
-                            <h2>Article Name</h2>
-                            <p>$1234</p>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_947972-MLA43333307881_092020-O.jpg " width="150 " height="150 " alt="article " />
-                            <h2>Article Name</h2>
-                            <p>$1234</p>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_705770-MLA40106999357_122019-F.jpg " width="150 " height="150 " alt="article " />
-                            <h2>Article Name</h2>
-                            <p>$1234</p>
-                        </article>
-                    </td>
-                    <td>
-                        <article>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_985000-MLA43430561207_092020-F.jpg " width="150 " height="150 " alt="article " />
-                            <h2>Article Name</h2>
-                            <p>$1234</p>
-                        </article>
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footerInner ">
-            <div class="leftContainer ">
-                <div class="footerLinks floatLeft ">
-                    <ul>
-                        <li>
-                            <a href="/ ">Shipping</a>
-                        </li>
-                        <li>
-                            <a href="/ ">Returns</a>
-                        </li>
-                        <li>
-                            <a href="pages/contact.html ">Contact</a>
-                        </li>
-                        <li>
-                            <a href="/ ">Terms of Service</a>
-                        </li>
-                        <li>
-                            <img class="mt-10 " src="images/harmony.png " alt="harmonyLogo " width="100 " height="15 ">
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footerNetworks ">
-                    <span>Follow us</span>
-                    <div class="pt-5 ">
-                        <a href="# ">
-                            <span class="mdi mdi-instagram "></span>
-                        </a>
-                        <a href="# ">
-                            <span class="mdi mdi-facebook "></span>
-                        </a>
+        <div class="container-fluid p-0 mb-5 border-bottom">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slider/1.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/2.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/3.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/4.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/5.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/6.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/7.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/8.jpg" class="d-block h-25" alt="Imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider/9.jpg" class="d-block h-25" alt="Imagen">
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="harmonyLogo "></div> -->
-
-
-
-            <div class="rightContainer floatRight ">
-
-                <div class="subscriptionContainer ">
-                    <label for="subscribe ">Subscribe to our newsletter for a 10% off code!</label>
-                    <input id="subscribe " type="text " placeholder="Enter your mail ">
-                    <!-- <span class="mdi mdi-send mdi-rotate-315 button "></span> -->
-                    <button type="button " title="Get your code! ">Get your code!</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1 offset-md-0 col-md-3 d-flex justify-content-md-center">
+                    <figure class="figure">
+                        <a href="pages/products/earrings/1.html">
+                            <img src="images/1.jpg" class="figure-img img-fluid rounded shadow" alt="Imagen">
+                        </a>
+                        <figcaption class="figure-caption">Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
                 </div>
-
-                <div class="paymentMethods ">
-                    <div class="amexCard floatLeft mr-5 "></div>
-                    <div class="masterCard floatLeft mr-5 "></div>
-                    <div class="visaCard floatLeft mr-5 "></div>
-                    <div class="paypalCard floatLeft "></div>
+                <div class="col-10 offset-1 offset-md-0 col-md-3 d-flex justify-content-md-center">
+                    <figure class="figure">
+                        <a href="pages/products/earrings/2.html">
+                            <img src="images/2.jpg" class="figure-img img-fluid rounded shadow" alt="Imagen">
+                        </a>
+                        <figcaption class="figure-caption">Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
                 </div>
-
-
+                <div class="col-10 offset-1 offset-md-0 col-md-3 d-flex justify-content-md-center">
+                    <figure class="figure">
+                        <img src="images/3.jpg" class="figure-img img-fluid
+                    rounded shadow" alt="Imagen">
+                        <figcaption class="figure-caption">Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-10 offset-1 offset-md-0 col-md-3 d-flex justify-content-md-center">
+                    <figure class="figure">
+                        <img src="images/4.jpg" class="figure-img img-fluid
+                    rounded shadow" alt="Imagen">
+                        <figcaption class="figure-caption">Lorem ipsum dolor sit amet.</figcaption>
+                    </figure>
+                </div>
             </div>
+            <hr class="featurette-divider">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias recusandae atque est. Laborum error molestiae dolore quas nemo vel rerum fugit quisquam voluptatum, sint assumenda ab omnis ullam quam sunt aperiam repellat neque accusamus
+                        perspiciatis quae quis inventore natus ut? Molestias sit impedit pariatur officia veritatis beatae quo, alias quis!</p>
+                </div>
+                <div class="col-12 col-md-5 d-flex justify-content-center mt-5 mt-md-0">
+                    <img src="images/5.jpg" class="rounded-3 shadow" alt="Imagen">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row">
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                    <img src="images/6.jpg" class="rounded-3 shadow" alt="Imagen">
+                </div>
+                <div class="col-12 col-md-7 mt-5 mt-md-0">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias recusandae atque est. Laborum error molestiae dolore quas nemo vel rerum fugit quisquam voluptatum, sint assumenda ab omnis ullam quam sunt aperiam repellat neque accusamus
+                        perspiciatis quae quis inventore natus ut? Molestias sit impedit pariatur officia veritatis beatae quo, alias quis!</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+    </main>
 
-
-
-
+    <!--Footer container -->
+    <footer class="footer border-top bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 py-5 col-md-3 py-md-0 d-flex justify-content-evenly align-items-center">
+                    <a href="pages/contacts.html">Contacts</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <img class="h-25" src="images/harmony.png" alt="Harmony Logo" />
+                </div>
+                <div class="col-12 py-5 col-md-3 py-md-0 d-flex justify-content-evenly align-items-center">
+                    <a target="_blank" href="#">Twitter</a>
+                    <a target="_blank" href="#">Instagram</a>
+                    <a target="_blank" href="#">Facebook</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
