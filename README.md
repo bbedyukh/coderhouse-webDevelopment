@@ -2,7 +2,7 @@
 
 ## Instalación
 
-bbedyukh-store requiere [Node.js](https://nodejs.org/) v10+ to run.
+bbedyukh-store requiere [Node.js](https://nodejs.org/) v10+ para ejecutarse.
 
 Bajate el repo, instalá las dependencias y ejecutá.
 
