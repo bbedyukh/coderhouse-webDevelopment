@@ -15,8 +15,8 @@
         "cpx": "^1.5.0"
     },
     "scripts": {
-        "dev": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" src/libs/bootstrap -C && node server.js",
-        "prod": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" public/libs/bootstrap -C && cpx \"src/**/*.{html,jpg,png,ico}\" public -C && sass src/css/scss/styles.scss public/css/styles.css && nodemon ./server.js"
+        "dev": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" src/libs/bootstrap -C && nodemon ./server-dev.js",
+        "prod": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" public/libs/bootstrap -C && cpx \"src/**/*.{html,jpg,png,ico}\" public -C && sass src/css/scss/styles.scss public/css/styles.css && nodemon ./server-prod.js"
     },
     "repository": {
         "type": "git",
