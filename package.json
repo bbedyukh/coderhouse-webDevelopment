@@ -1,0 +1,31 @@
+{
+    "name": "store-bedyukh",
+    "version": "1.0.0",
+    "description": "A jewelry store",
+    "main": "server.js",
+    "dependencies": {
+        "@popperjs/core": "^2.9.2",
+        "bootstrap": "^5.0.2",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.12",
+        "sass": "^1.36.0",
+        "serve-static": "^1.14.1"
+    },
+    "devDependencies": {
+        "cpx": "^1.5.0"
+    },
+    "scripts": {
+        "dev": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" src/libs/bootstrap -C && node server.js",
+        "prod": "cpx \"node_modules/bootstrap/dist/**/*.{js,css,map}\" public/libs/bootstrap -C && cpx \"src/**/*.{html,jpg,png,ico}\" public -C && sass src/css/scss/styles.scss public/css/styles.css && nodemon ./server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bbedyukh/store-bedyukh.git"
+    },
+    "author": "Bogdan Bedyukh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bbedyukh/store-bedyukh/issues"
+    },
+    "homepage": "https://github.com/bbedyukh/store-bedyukh#readme"
+}
